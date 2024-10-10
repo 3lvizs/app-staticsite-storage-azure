@@ -22,8 +22,8 @@ jobs:
       with:
         terraform_version: $TERRAFORM_VERSION
     - uses: actions/checkout@v4
-    - run : terraform -chdir=./terraform/azure init
-    - run : terraform -chdir=./terraform/azure validate
+    - run : terraform -chdir=./terraform/ init
+    - run : terraform -chdir=./terraform/ validate
 
   CD-deploy:
     name: Deploy
